@@ -14,8 +14,8 @@ from bson.objectid import ObjectId
 
 app = Flask(__name__)
 
-app.config['MONGO_DBNAME'] = 'foodb'
-app.config['MONGO_URI'] = 'mongodb://localhost:27017/foodb'
+app.config['MONGO_DBNAME'] = 'flask_exercise'
+app.config['MONGO_URI'] ="mongodb+srv://user1:password1.0@cluster0.4sih9.mongodb.net/flask_exercise?retryWrites=true&w=majority"
 
 mongo = PyMongo(app)
 
